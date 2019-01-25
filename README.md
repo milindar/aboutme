@@ -13,6 +13,6 @@ I did this repository in the cloud using github. This helps me to learn web page
 - **HTML** ([https://www.w3schools.com/html/default.asp](https://www.w3schools.com/html/default.asp "html")
 - **JAVA SCRIPT** ([https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp "java script"))
 ## Contributors
-MILLINDAR REDDY MALIGIREDDY
+MILLINDAR REDDY MALIGIREDDY,
 MASTERS IN APPLIED COMPUTER SCIENCE
 ![Image](https://redfairyproject.com/wp-content/uploads/2016/07/Dont-give-up.jpg "Image")
