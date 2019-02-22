@@ -1,71 +1,87 @@
 <!doctype html>
 <html>
+
 <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="milindar.css" rel="stylesheet">
-<title>Arithmetic calculations</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="./style/milindar.css" rel="stylesheet">
+
+  <script src="./scripts/maligireddy.js" rel="scripts"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <title>Area of rectangle</title>
 </head>
+
 <body>
-        
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                        <a class="navbar-brand" href="#">Millindar Reddy</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                          <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="Function.html">Arithmetic calculations</a>
-                            </li>
-                          </ul>
-                          <form class="form-inline mt-2 mt-md-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                          </form>
-                        </div>
-                      </nav>
-                      <br>
-                      <br>
-                      <br>
-                      <h2>Arithmetic operations</h2>
-enter first value <br>                     
-<input id="x"><br>
-enter second value <br>
-<input id="y"><br>
-<button id="submit" onclick="add()">Addition</button>
-<button id="submit" onclick="mul()">Multiplication</button>
 
-<div id="result"></div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Millindar Reddy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Function.html">Area of Rectangle</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="qunitTest.html">QUnit Test</a>
+          </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <h2>Area of a Rectangle</h2>
+  Enter length <br>
+  <input id="x" type="text"><br>
+  Enter breadth <br>
+  <input id="y" type="text"><br>
 
-<script>
-function add() {
-  var x = Number(document.getElementById('x').value);
-  var y = Number(document.getElementById('y').value);
+  <button onclick="area()">Area</button>
 
-  document.getElementById('result').innerHTML = x+y;
- 
-  return false;
-document.getElementById('submit').addEventListener('click', add);
-}
-function mul() {
-  var x = Number(document.getElementById('x').value);
-  var y = Number(document.getElementById('y').value);
 
-  document.getElementById('result').innerHTML = x*y;
-}
- 
-</script>
- <footer>  
-    <hr> 
-      &copy;2019 Millindar Reddy
-      Contact:milindarreddy@gmail.com
+  <br>
+  <br>
+  <div id="result"></div>
+  <br>
+  <br>
+  <br>
+  <button onclick="local()">storage</button>
+  
+  <div id="storage"></div>
+  
+  <br>
+  press on say hello<br>
+  <button id="magic" onclick="ajax()" class="button">Say hello</button>
+    <div id="ajax">
+    </div>
 
-  </footer> 
+
+    <br>
+    
+  <footer>
+    <hr>
+    &copy;2019 Millindar Reddy
+    Contact:milindarreddy@gmail.com
+
+  </footer>
+
 </body>
+
 </html>
